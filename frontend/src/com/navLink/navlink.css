@@ -1,0 +1,17 @@
+.nav-link {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  &:hover li {
+    filter: blur(3px);
+  }
+  li {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+    text-transform: capitalize;
+  }
+  li:hover {
+    filter: blur(0px);
+  }
+}
