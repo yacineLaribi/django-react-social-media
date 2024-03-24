@@ -20,6 +20,7 @@ function SignupForm() {
     try {
       const response = await axios.post('/signup/', formData);
       console.log(response.data); // Handle successful signup
+      
     } catch (error) {
       console.error(error.response.data); // Handle signup error
     }

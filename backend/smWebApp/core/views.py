@@ -10,16 +10,16 @@ def user_signup(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
+        password2 = request.POST['password2']
         email = request.POST['email']
 
         # Check if username is already taken
-        if User.objects.filter(username=username).exists():
-            return JsonResponse({'message': 'Username is already taken'}, status=400)
-
+        if User.objects.filter(username=username , email=email).exists():
+            return JsonResponse({'message': 'Username or Email is already taken'}, status=400)
         # Create the user
-        user = User.objects.create_user(username=username, email=email, password=password)
+        user = User.objects.create_user(username=username, email=email, password=password,password2=password2)
         # Optionally, you can create a UserProfile instance as well
-
+        
         return JsonResponse({'message': 'Signup successful'})
     else:
         return JsonResponse({'message': 'Only POST requests are allowed'}, status=405)
