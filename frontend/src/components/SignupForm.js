@@ -24,7 +24,7 @@ function SignupForm() {
       console.error(error.response.data); // Handle signup error
     }
   };
-
+console.log('it is working')
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" name="username" value={formData.username} onChange={handleChange} placeholder="Username" />
