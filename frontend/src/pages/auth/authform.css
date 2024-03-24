@@ -1,0 +1,46 @@
+.auth-form {
+  min-height: 100%;
+  flex-direction: column;
+  .toggle-button {
+    width: 80px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 25px;
+    p {
+      top: -20px;
+      background-color: transparent;
+      position: absolute;
+      font-weight: 600;
+    }
+    p:first-child {
+      right: -40px;
+    }
+    p:last-child {
+      left: -45px;
+    }
+    img {
+      width: 25px;
+      transition: 0.9s;
+      transform: translateX(150%) rotate(-45deg);
+      background-color: transparent;
+    }
+    img.singup {
+      transform: translateX(-150%) rotate(225deg);
+    }
+  }
+  .card {
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: var(--white);
+    .front {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

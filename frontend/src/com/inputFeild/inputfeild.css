@@ -1,0 +1,22 @@
+.input-feild {
+  position: relative;
+  border: 1.3px solid var(--blue);
+  margin-block: 15px;
+  height: 40px;
+  width: 300px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+  img {
+    width: 16px;
+    margin-right: 10px;
+  }
+  label {
+    font-weight: 600;
+    padding-inline: 5px;
+    position: absolute;
+    top: -12px;
+    left: 5px;
+  }
+}

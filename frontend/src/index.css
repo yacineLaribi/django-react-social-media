@@ -1,5 +1,6 @@
 :root {
-  --white: #f0f3fa;
+  --white: #fff;
+  --light-gray: #f0f3fa;
   --gray: #d5deef;
   --dark-gray: #b1c9ef;
   --light-blue: #8aaee0;
@@ -14,6 +15,7 @@
   border: none;
   outline: none;
   color: var(--black);
+  background-color: inherit;
 }
 li {
   list-style-type: none;
@@ -24,5 +26,18 @@ a {
 #root {
   width: 100vw;
   height: 100vh;
-  background-color: var(--white);
+  background-color: var(--light-gray);
+}
+.app {
+  width: 100%;
+  height: 100%;
+  > main {
+    width: 100%;
+    height: 89%;
+  }
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
