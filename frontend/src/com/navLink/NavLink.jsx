@@ -1,3 +1,4 @@
+import { Button } from "../comIndex";
 import "./navlink.css";
 const NavLink = () => {
   return (
@@ -5,7 +6,7 @@ const NavLink = () => {
       <li>messages</li>
       <li>setting</li>
       <li>notification</li>
-      <button>log out</button>
+      <Button text={"log out"}/>
     </ul>
   );
 };

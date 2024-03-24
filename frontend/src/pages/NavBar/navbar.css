@@ -21,4 +21,9 @@
   .nav {
     margin-left: auto;
   }
+  .auth-menu {
+    > * {
+      margin-left: 20px;
+    }
+  }
 }

@@ -1,8 +1,8 @@
 import "./navbar.css";
 import { logo } from "../../assets/imgIndex";
-import { NavLink } from "../../com/comIndex";
+import { Button, NavLink } from "../../com/comIndex";
 const NavBar = () => {
-  let isLogged = false;
+  let isLogged = true;
   return (
     <nav className="navbar">
       <img src={logo} alt="logo img" />
@@ -11,8 +11,8 @@ const NavBar = () => {
           <NavLink />
         ) : (
           <div className="auth-menu">
-            <button>log in</button>
-            <button>sing up</button>
+            <Button text={"log in"} />
+            <Button text={"sing up"} />
           </div>
         )}
       </div>
